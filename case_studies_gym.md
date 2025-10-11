@@ -28,24 +28,10 @@ I implemented:
 
 ---
 
-### Results
-| Metric | Before | After |
-|--------|--------|--------|
-| Trial bookings | 8/month | 23/month |
-| Lead response rate | 12% | 34% |
-| Time saved weekly | 0 hrs | 5 hrs |
-
----
-
-### Client Feedback
-> "_This system runs on autopilot and brought back leads I thought were dead. Amazing!_"
-
----
-
 ### Automation Workflow
 ```mermaid
-graph LR
-A[Lead Form] --> B[Google Sheet]
-B --> C[Make.com]
-C --> D[Follow-up Emails]
-D --> E[Trial Booking]
+A[Lead Form(Source Point)]
+--> B[Google Sheet]
+--> C[Make.com]
+--> D[Follow-up Emails]
+--> E[Trial Booking]
