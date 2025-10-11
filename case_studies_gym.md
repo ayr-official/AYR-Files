@@ -2,8 +2,7 @@
 
 **Industry:** Fitness  
 **Service:** Lead Nurturing Automation  
-**Client Type:** Local Gym  
-**Date:** January 2025
+**Date:** October 2025
 
 ---
 
