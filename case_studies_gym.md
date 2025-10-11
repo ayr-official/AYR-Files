@@ -1,7 +1,3 @@
----
-
-### ✅ Example Case Study 1 (`case_study_gym1.md`)
-
 # Case Study – Local Gym Boosts Trial Bookings
 
 **Industry:** Fitness  
