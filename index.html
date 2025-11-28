@@ -20,6 +20,14 @@
         .card-bg {
             background-color: #1f2937; /* Darker gray background for cards */
         }
+        .social-link:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.5), 0 4px 6px -2px rgba(16, 185, 129, 0.05);
+        }
+        /* Custom SVG styles for social icons */
+        .svg-facebook { fill: #1877F2; }
+        .svg-instagram { fill: url(#instagramGradient); }
+        .svg-reddit { fill: #FF4500; }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100 antialiased">
@@ -45,9 +53,9 @@
                 Turn cold leads into booked consultations in just <strong>one hyper-personalized week</strong>, all while you focus on training.
             </p>
             
-            <!-- Primary CTA Button -->
-            <a href="#pricing" class="inline-block cta-gradient text-gray-900 font-bold py-4 px-10 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300 transform text-lg md:text-xl">
-                Fast Setup: Get Started for Just $30
+            <!-- Primary CTA Button - Links to DM Section -->
+            <a href="#contact" class="inline-block cta-gradient text-gray-900 font-bold py-4 px-10 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300 transform text-lg md:text-xl">
+                Fast Setup: DM Us to Get Started for $30
             </a>
             <p class="text-sm text-gray-500 mt-3">Cancel anytime. No long-term contracts.</p>
         </div>
@@ -203,23 +211,78 @@
                     </p>
                 </div>
                 
-                <a href="mailto:ayr.automateyourroutine@gmail.com" class="inline-block cta-gradient text-gray-900 font-bold py-4 px-12 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300 transform text-xl">
+                <!-- CTA Button now links down to the new contact section -->
+                <a href="#contact" class="inline-block cta-gradient text-gray-900 font-bold py-4 px-12 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300 transform text-xl">
                     Claim Your $30 Fast Setup Now
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- 6. NEW DM CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-gray-700">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold mb-4 text-white">Ready to Boost Your Conversions?</h2>
+            <p class="text-xl text-gray-300 mb-10">DM us directly to start your $30 Fast Setup. We'll handle the rest!</p>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+
+                <!-- Instagram Gradient Definition (for SVG) -->
+                <svg width="0" height="0">
+                    <linearGradient id="instagramGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f9ce34;stop-opacity:1" />
+                        <stop offset="20%" style="stop-color:#ee2a7b;stop-opacity:1" />
+                        <stop offset="60%" style="stop-color:#6228d7;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#833ab4;stop-opacity:1" />
+                    </linearGradient>
+                </svg>
+
+                <!-- Facebook Link -->
+                <a href="https://www.facebook.com/share/1F9sk5oAKY/" target="_blank" rel="noopener noreferrer" class="social-link flex flex-col items-center p-6 w-36 bg-gray-800 rounded-xl shadow-lg border-2 border-transparent hover:border-blue-500 transition duration-300">
+                    <svg class="w-12 h-12 svg-facebook mb-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.01998C6.47715 2.01998 2 6.49713 2 12.0199C2 17.0601 5.65651 21.2678 10.6667 21.98V14.28H7.70833V11.23H10.6667V8.92998C10.6667 5.91005 12.4492 4.28631 15.1118 4.28631C16.4251 4.28631 17.5501 4.51263 17.8893 4.55088V7.27998H16.2083C14.7358 7.27998 14.4792 7.99498 14.4792 9.00665V11.23H17.7083L17.2083 14.28H14.4792V21.98C19.4901 21.2685 23 17.0601 23 12.0199C23 6.49713 18.5228 2.01998 13 2.01998H12Z" fill="#1877F2"/>
+                    </svg>
+                    <span class="text-sm font-semibold text-white">DM on Facebook</span>
+                </a>
+
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/areal.one.agency/" target="_blank" rel="noopener noreferrer" class="social-link flex flex-col items-center p-6 w-36 bg-gray-800 rounded-xl shadow-lg border-2 border-transparent hover:border-pink-500 transition duration-300">
+                    <svg class="w-12 h-12 mb-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="url(#instagramGradient)" stroke-width="2"/>
+                        <circle cx="12" cy="12" r="3" fill="none" stroke="url(#instagramGradient)" stroke-width="2"/>
+                        <circle cx="17.5" cy="6.5" r="0.8" fill="url(#instagramGradient)"/>
+                        <path d="M16 3H8C4.13401 3 1 6.13401 1 10V16C1 19.866 4.13401 23 8 23H16C19.866 23 23 19.866 23 16V8C23 4.13401 19.866 1 16 1Z" fill="url(#instagramGradient)" opacity="0.1"/>
+                    </svg>
+                    <span class="text-sm font-semibold text-white">DM on Instagram</span>
+                </a>
+
+                <!-- Reddit Link -->
+                <a href="https://www.reddit.com/user/ayr-media/" target="_blank" rel="noopener noreferrer" class="social-link flex flex-col items-center p-6 w-36 bg-gray-800 rounded-xl shadow-lg border-2 border-transparent hover:border-red-500 transition duration-300">
+                    <svg class="w-12 h-12 mb-2 svg-reddit" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.201 22.5 1.5 17.799 1.5 12C1.5 6.201 6.201 1.5 12 1.5C17.799 1.5 22.5 6.201 22.5 12Z" fill="#FF4500" stroke="#FF4500" stroke-width="1.5"/>
+                        <path d="M12 2.871C6.982 2.871 2.871 6.982 2.871 12C2.871 16.036 5.501 19.537 9.25 20.627V15.225C9.25 14.545 9.805 14 10.485 14H13.515C14.195 14 14.75 14.545 14.75 15.225V20.627C18.499 19.537 21.129 16.036 21.129 12C21.129 6.982 17.018 2.871 12 2.871Z" fill="#FFFFFF"/>
+                        <path d="M12 11.25C11.196 11.25 10.515 11.805 10.515 12.585C10.515 13.365 11.196 13.92 12 13.92C12.804 13.92 13.485 13.365 13.485 12.585C13.485 11.805 12.804 11.25 12 11.25Z" fill="#FF4500"/>
+                        <path d="M15.5 8C16.88 8 18 9.12 18 10.5C18 11.88 16.88 13 15.5 13C14.12 13 13 11.88 13 10.5C13 9.12 14.12 8 15.5 8Z" fill="#FF4500"/>
+                        <path d="M8.5 8C9.88 8 11 9.12 11 10.5C11 11.88 9.88 13 8.5 13C7.12 13 6 11.88 6 10.5C6 9.12 7.12 8 8.5 8Z" fill="#FF4500"/>
+                    </svg>
+                    <span class="text-sm font-semibold text-white">DM on Reddit</span>
+                </a>
+            </div>
+
+            <p class="text-sm text-gray-500 mt-8">Click on your preferred platform. We typically respond within minutes during business hours!</p>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="mt-16 py-8 border-t border-gray-700 text-center text-gray-500">
+    <footer class="mt-16 py-8 border-t border-gray-800 text-center text-gray-500">
         <div class="max-w-7xl mx-auto px-6">
             <p>&copy; 2025 AYR. Specializing in Lead Nurturing. </p>
             <p class="mt-2 text-sm">
-                For inquiries, please contact <a href="mailto:ayr.automateyourroutine@gmail.com" class="text-emerald-400 hover:text-emerald-300">ayr.automateyourroutine@gmail.com</a>
+                <!-- Removed email link to encourage DM contact, kept it text only as a secondary contact method -->
+                For inquiries, please use a social platform above or email: ayr.automateyourroutine@gmail.com
             </p>
         </div>
     </footer>
 
 </body>
 </html>
-
